@@ -27,7 +27,7 @@ function getMovies(keyword){
         })
         .then(response => {
             if (response.Response === "False"){
-                throw new Error(response.Error);
+                throw new Error(response.error);
             }
 
             return response.Search;
